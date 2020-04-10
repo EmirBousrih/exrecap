@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Ajouter un Livre</title>
+	<link rel="stylesheet" href="styles/styleform.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+	<h1> Ajout de Livre </h1>
+
+	
+
+	<form action="AjouterLivre.php" method="post" enctype="multipart/form-data">
+	
+	<table>
+		<tr>
+			<td>
+				<p>ISBN :</p>
+			</td>
+			<td><input class="form-control mr-sm-2" type="text" name="isbn" required></td>
+		</tr>
+		<tr>
+			<td>
+				<p>Titre :</p>
+			</td>
+			<td><input class="form-control mr-sm-2" type="text" name="titre" required></td>
+		</tr>
+		<tr>
+			<td>
+				<p>Theme :</p>
+			</td>
+			<td>
+				 <select class="form-control mr-sm-2" id="theme" name="theme" >
+				 	<option selected >Selectionner Theme</option>
+				    <option value="Romance">Romance</option>
+				    <option value="Policier">Policier</option>
+				    <option value="Biographie">Biographie</option>
+				    <option value="Thriller">Horreur</option>
+				    <option value="Guerre">Guerre</option>
+				    <option value="Science Fiction">Science Fiction</option>
+				 	<option value="Histoire">Histoire</option>
+
+				 </select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Auteur :</p>
+			</td>
+			<td><select class="form-control mr-sm-2" id="auteur" name="auteur" >
+					<option selected >Selectionner Auteur</option>
+				    <option value="George R. R. Martin">George R. R. Martin</option>
+				    <option value="E. L. James">E. L. James</option>
+				    <option value="John Green">John Green</option>
+				    <option value="Nora Roberts">Nora Roberts</option>
+				    <option value="J. K. Rowling">J. K. Rowling</option>
+				    <option value="Stephen King">Stephen King</option>
+				    <option value="Paulo Coelho">Paulo Coelho</option>
+				    <option value="Elif Shafak">Elif Shafak</option>
+				    <option value="Bob Dylan">Bob Dylan</option>
+				    <option value="Jane Austen">Jane Austen</option>
+
+
+				 </select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Editeur :</p>
+			</td>
+			<td>
+						 <select class="form-control mr-sm-2" id="theme" name="editeur" >
+						 	<option selected >Selectionner Editeur</option>
+						    <option value="Penguin Random House">Penguin Random House</option>
+						    <option value="HarperCollins">HarperCollins</option>
+						    <option value="Simon & Schuster">Simon & Schuster</option>
+						    <option value="Hachette Book Group">Hachette Book Group</option>
+						    <option value="Macmillan">Macmillan</option>
+						    <option value="Scolaire">Scolaire</option>
+						 	<option value="Disney Publishing Worldwide">Disney Publishing Worldwide</option>
+
+						 </select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Description:</p>
+			</td>
+			<td><textarea class="form-control  mr-sm-2 " name="desc" rows="10" cols="35" required> </textarea></td>
+		</tr>
+		<tr>
+			<td>
+				<p>Page de Garde : &nbsp&nbsp&nbsp </p>
+			</td>
+			
+			<td>
+				<input class="form-control-file " type="file" name="fileToUpload" id="fileToUpload" required>
+				
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Mots clefs :</p>
+			</td>
+			<td><input class="form-control mr-sm-2" type="text" name="mclefs" required></td>
+		</tr>
+		<tr>
+			<td>
+				<p>Date :</p>
+			</td>
+			<td><input class="form-control mr-sm-2" type="date" name="date" required></td>
+		</tr>
+		<tr>
+			<td>
+				<p>Format :</p>
+			</td>
+			<td>  
+				  <label for="papier"> Papier</label>
+				  <input type="checkbox" id="papier" name="format" value="Papier" checked>
+			      <label for="electronique"> Electronique</label>
+				  <input type="checkbox" id="electronique" name="format" value="Electronique">
+				  
+			</td>
+		</tr>
+		<tr>
+			<td></td><td><input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Ajouter">
+			<a role="button"class="btn btn-outline-primary my-2 my-sm-0" href="administration.html">Annuler</a>
+
+		</tr>
+	</table>
+		
+	</form>
+
+
+
+	
+</body>
+</html>
+
+
+

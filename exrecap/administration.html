@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Administration</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css'>
+<link rel="stylesheet" href="./styles/styleadmin.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="owl-carousel owl-theme">
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book3.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h1 class="owl-slide-animated owl-slide-title">Bienvenue sur notre bibliothèque</h1>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Cette bibliothèque en ligne vous propose plusieurs fonctionnalités, découverez les dans les prochains slides.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book1.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h2 class="owl-slide-animated owl-slide-title">Découverez notre collection de livres</h2>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Une collection bien riche en livres bien décrits, de plusieurs types et identifiés par leurs ISBN.
+            </div>
+            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="AfficherLivres.php" target="_blank" role="button">Afficher</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book4.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h2 class="owl-slide-animated owl-slide-title">Trouvez le livre que vous voulez</h2>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Recherchez le livre que vous voulez pour avoir plus de détails, Vous devez juste entrer son ISBN.
+            </div>
+             <form action="rechercherLivre.php" method="POST" class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="ISBN" name="isbnrech"required>
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Rechercher</button>
+             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book5.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h2 class="owl-slide-animated owl-slide-title">Enrichissez notre Bibiliotheque</h2>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Ajouter un livre à cette bibliotheque. Vous devez juste entrer quelques détails.
+            </div>
+            <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="AjouterLivre.html" target="_blank" role="button">Ajouter livre</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book7.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h2 class="owl-slide-animated owl-slide-title">Modifiez ce que vous trouvez faux!</h2>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Modifiez les données de n'importe quel livre , à conditions que cette modification soit necessaire. Vous devez juste entrer l'ISBN du livre.
+            </div>
+            <form action="ModifierLivre.php" method="post" class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="ISBN" required name="isbnmodif">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Modifier</button>
+             </form>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+
+  <div class="owl-slide d-flex align-items-center cover" style="background-image: url(img/book6.jpg);">
+    <div class="container">
+      <div class="row justify-content-center justify-content-md-start">
+        <div class="col-10 col-md-6 static">
+          <div class="owl-slide-text">
+            <h2 class="owl-slide-animated owl-slide-title">Supprimez ce qui contredit votre goût</h2>
+            <div class="owl-slide-animated owl-slide-subtitle mb-3">
+              Entrez l'ISBN du livre que vous voulez supprimer!
+            </div>
+             <form action="SuppLivre.php" method="post" class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="ISBN" name="isbnsupp" required>
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Supprimer</button>
+             </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div><!--/owl-slide-->
+</div>
+
+
+<!-- partial -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
+
+
+
